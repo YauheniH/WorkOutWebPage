@@ -1,0 +1,242 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc; /* Light greyish background for a clean feel */
+    color: #333; /* Default text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+    font-size: 1rem;
+}
+
+/* Header Styles */
+h1 {
+    color: #1e90ff; /* Sky Blue for the main title */
+    font-size: 4rem; /* Large font size for visibility */
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Subtitle / Link Styles */
+h3 {
+    font-size: 1.6rem;
+    margin: 10px 0;
+    color: #444;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Link Styling */
+a {
+    text-decoration: none;
+    color: #fff; /* White text for the links */
+    background-color: #1e90ff; /* Sky blue background */
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: #ebaf09; /* Darker yellow-orange on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+a:active {
+    background-color: #ebaf09; /* Darker yellow-orange on active (tap) */
+    transform: scale(1.05); /* Slight scale effect on active */
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #1e90ff; /* Matching blue for consistency */
+    text-align: center;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem; /* Adjust title size for smaller screens */
+    }
+
+    h3 {
+        font-size: 1.2rem; /* Adjust subtitle size for smaller screens */
+    }
+    
+}
+
+/* Container for Sections */
+.WarmUP, .Legs, .UpperBody, .Stretching, .Mobility, .Core, .Plank, .Roller, .RoleRut {
+    background-color: #fff; /* White background */
+    border-radius: 12px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 30px;
+    margin-bottom: 40px;
+    width: 80%; /* The width of the container */
+    max-width: 900px; /* Maximum width */
+    min-width: 320px; /* Prevents the container from shrinking below this width */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Align items vertically */
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center; /* Center content horizontally */
+    flex-shrink: 0; /* Prevent shrinking when screen size decreases */
+    box-sizing: border-box; /* Include padding and borders in width/height calculation */
+}
+
+.WarmUP:hover, .Legs:hover, .UpperBody:hover, .Stretching:hover, .Mobility:hover, .Core:hover, .Plank:hover, .Roller:hover, .RoleRut:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Hover effect for interactive feel */
+}
+
+h2 {
+    color: #e74c3c; /* Red for the section titles */
+    font-size: 2.8vm;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+h4 {
+    color: #1e90ff; /* Sky blue for the exercise titles */
+    font-size: 1.5rem;
+    margin-bottom: 15px; /* Space between exercises */
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Text and Exercise Descriptions */
+p {
+    font-size: 4vm;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    background-color: rgba(164, 189, 210, 0.3);
+    padding: 12px 24px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+p:hover {
+    background-color: rgba(45, 148, 232, 0.5);
+}
+
+/* Timer and Button Styles */
+.timer {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.timer-container {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #ebaf09;
+    transform: scale(1.1);
+}
+
+/* Section Specific Styles for Different Categories */
+.WarmUP h2, .Legs h2, .UpperBody h2, .Stretching h2, .Mobility h2, .Core h2, .Plank h2, .Roller h2, .RoleRut h2 {
+    font-size: 2.5rem; /* Adjust h2 size */
+    font-weight: bold;
+}
+
+.WarmUP h4, .Legs h4, .UpperBody h4, .Stretching h4, .Mobility h4, .Core h4, .Plank h4, .Roller h4, .RoleRut h4 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #1e90ff;
+    margin-top: 15px;
+}
+
+/* Specialized Styling for Plank and Roller */
+.Plank p, .Roller p {
+    background-color: #f0c2c2; /* Light pinkish background for special exercises */
+    color: #cd2828; /* Red text for urgency */
+}
+
+.Plank, .Roller {
+    border: 2px solid #ebaf09;
+}
+
+.Plank h2, .Roller h2 {
+    color: #cd2828; /* Matching red for section title */
+}
+
+/* Adjust the spacing between the exercises */
+.WarmUP h4 + h4, .Legs h4 + h4, .UpperBody h4 + h4, .Stretching h4 + h4, .Mobility h4 + h4, .Core h4 + h4, .Plank h4 + h4, .Roller h4 + h4, .RoleRut h4 + h4 {
+    margin-top: 20px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .timer {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    h4 {
+        font-size: 1.3rem;
+    }
+
+    .btn {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+
+    .timer-container, footer {
+        padding: 20px;
+    }
+   
+}
+
+.svg-button {
+    
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+
